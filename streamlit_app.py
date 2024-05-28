@@ -1,47 +1,70 @@
 import streamlit as st
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+import torch
+from torchvision import models, transforms
+from PIL import Image
+import requests
+import numpy as np
+import pandas as pd
 
-# Cargar el dataset Iris
-iris = load_iris()
-X = iris.data
-y = iris.target
+# Configurar la página de Streamlit
+st.title("Clasificación de imágenes con ResNet 2-")
 
-# Dividir el dataset en conjunto de entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+st.dataframe(pd.read_csv("imdb-movies-dataset.csv"))
 
-# Entrenar el modelo
-clf = RandomForestClassifier()
-clf.fit(X_train, y_train)
 
-# Evaluar el modelo
-y_pred = clf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
+# Cargar el modelo ResNet50 preentrenado
+model = models.resnet50(pretrained=True)
+model.eval()
 
-# Crear la aplicación en Streamlit
-st.title("Clasificador de Iris")
-st.write(f"Exactitud del modelo: {accuracy:.2f}")
+# Definir las transformaciones para la imagen
+preprocess = transforms.Compose([
+    transforms.Resize(256),
+    transforms.CenterCrop(224),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
 
-st.sidebar.header("Ingrese las características de la flor:")
+# Cargar etiquetas de ImageNet
+@st.cache_data
+def load_labels():
+    try:
+        url = "https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt"
+        response = requests.get(url)
+        response.raise_for_status()
+        labels = response.text.splitlines()
+        return labels
+    except requests.exceptions.RequestException as e:
+        st.error(f"Error al cargar las etiquetas: {e}")
+        return []
 
-# Crear un formulario en la barra lateral
-sepal_length = st.sidebar.number_input("Longitud del sépalo (cm)", min_value=0.0, max_value=10.0, value=5.0, step=0.1)
-sepal_width = st.sidebar.number_input("Ancho del sépalo (cm)", min_value=0.0, max_value=10.0, value=3.0, step=0.1)
-petal_length = st.sidebar.number_input("Longitud del pétalo (cm)", min_value=0.0, max_value=10.0, value=4.0, step=0.1)
-petal_width = st.sidebar.number_input("Ancho del pétalo (cm)", min_value=0.0, max_value=10.0, value=1.0, step=0.1)
+labels = load_labels()
 
-# Predicción
-input_data = [[sepal_length, sepal_width, petal_length, petal_width]]
-prediction = clf.predict(input_data)
-prediction_proba = clf.predict_proba(input_data)
+# Subir la imagen
+uploaded_file = st.file_uploader("Elige una imagen...", type=["jpg", "jpeg", "png"])
 
-# Mapear la predicción a la especie correspondiente
-species = iris.target_names[prediction][0]
-st.write(f"La especie predicha es: **{species}**")
+if uploaded_file is not None:
+    try:
+        # Abrir la imagen
+        img = Image.open(uploaded_file)
+        st.image(img, caption="Imagen subida", use_column_width=True)
+        st.write("")
+        st.write("Clasificando...")
 
-# Mostrar las probabilidades de predicción
-st.write("Probabilidades de predicción:")
-for i, prob in enumerate(prediction_proba[0]):
-    st.write(f"{iris.target_names[i]}: {prob:.2f}")
+        # Preprocesar la imagen
+        img_t = preprocess(img)
+        batch_t = torch.unsqueeze(img_t, 0)
+
+        # Realizar la inferencia
+        with torch.no_grad():
+            out = model(batch_t)
+
+        # Obtener la predicción
+        _, index = torch.max(out, 1)
+        percentage = torch.nn.functional.softmax(out, dim=1)[0] * 100
+        label = labels[index[0]] if labels else "Etiqueta no disponible"
+
+        # Mostrar los resultados
+        st.write(f"Predicción: **{label}**")
+        st.write(f"Confianza: **{percentage[index[0]].item():.2f}%**")
+    except Exception as e:
+        st.error(f"Error al procesar la imagen: {e}")

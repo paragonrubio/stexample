@@ -1,0 +1,251 @@
+product_id,category,product_name,product_ref,product_price,product_size
+1436,accesorios baño,Set de toallas de algodón,ABÑ-001,61.20,55
+1437,accesorios baño,Cortina de ducha estampada,ABÑ-002,56.40,48
+1438,accesorios baño,Portacepillos de dientes,ABÑ-003,59.80,50
+1439,accesorios baño,Dispensador de jabón líquido,ABÑ-004,57.50,52
+1440,accesorios baño,Balanza digital de baño,ABÑ-005,63.20,60
+1441,accesorios baño,Cesto para ropa sucia,ABÑ-006,58.90,58
+1442,accesorios baño,Escobilla de váter,ABÑ-007,62.30,54
+1443,accesorios baño,Albornoz de algodón,ABÑ-008,60.40,56
+1444,accesorios baño,Perchero de pared para toallas,ABÑ-009,64.80,62
+1445,accesorios baño,Esponja exfoliante,ABÑ-010,57.70,59
+1446,accesorios baño,Alfombrilla de baño de microfibra,ABÑ-011,63.80,64
+1447,accesorios baño,Set de dispensadores de baño,ABÑ-012,61.60,61
+1448,accesorios baño,Jabonera de cerámica,ABÑ-013,58.30,57
+1449,accesorios baño,Cortina de ducha de tela,ABÑ-014,65.20,65
+1450,accesorios baño,Portarrollos de papel higiénico,ABÑ-015,59.90,59
+1451,accesorios baño,Percha doble para toallas,ABÑ-016,64.10,63
+1452,accesorios baño,Espejo de aumento sin marco,ABÑ-017,60.80,58
+1453,accesorios baño,Set de accesorios de baño de mármol,ABÑ-018,62.40,62
+1454,accesorios baño,Toallero de pie de acero inoxidable,ABÑ-019,66.50,66
+1455,accesorios baño,Bandeja organizadora para bañera,ABÑ-020,57.30,55
+1456,accesorios baño,Alfombra de baño de bambú,ABÑ-021,66.20,53
+1457,accesorios baño,Portacepillos de dientes eléctrico,ABÑ-022,64.80,52
+1458,accesorios baño,Percha para toallas de puerta,ABÑ-023,61.40,49
+1459,accesorios baño,Dispensador automático de jabón,ABÑ-024,67.50,55
+1460,accesorios baño,Escobilla de váter con soporte,ABÑ-025,62.90,50
+1461,accesorios baño,Cortina de ducha de vinilo,ABÑ-026,65.30,54
+1462,accesorios baño,Toallero de acero inoxidable,ABÑ-027,68.40,56
+1463,accesorios baño,Set de accesorios de baño de cerámica,ABÑ-028,63.70,51
+1464,accesorios baño,Báscula de baño mecánica,ABÑ-029,60.20,48
+1465,accesorios baño,Organizador de maquillaje acrílico,ABÑ-030,69.10,57
+1466,accesorios baño,Alfombrilla de baño de goma,ABÑ-031,65.80,67
+1467,accesorios baño,Portarrollos de papel higiénico empotrable,ABÑ-032,63.50,64
+1468,accesorios baño,Dispensador de jabón automático,ABÑ-033,60.20,60
+1469,accesorios baño,Organizador de baño para ducha,ABÑ-034,66.90,68
+1470,accesorios baño,Toallero de pie doble,ABÑ-035,62.10,61
+1471,accesorios baño,Cepillo de dientes eléctrico recargable,ABÑ-036,67.40,69
+1472,accesorios baño,Cesto para ropa sucia con tapa,ABÑ-037,69.30,70
+1473,accesorios baño,Perchero de puerta para toallas,ABÑ-038,64.80,65
+1474,accesorios baño,Portacepillos de dientes de acero inoxidable,ABÑ-039,68.20,68
+1475,accesorios baño,Estantería de esquina para ducha,ABÑ-040,63.90,63
+1476,accesorios baño,Alfombrilla de baño de microfibra de memoria,ABÑ-041,68.40,69
+1477,accesorios baño,Dispensador de jabón con sensor de movimiento,ABÑ-042,66.20,66
+1478,accesorios baño,Portarrollos de papel higiénico con estante,ABÑ-043,62.80,62
+1479,accesorios baño,Espejo de aumento con luz y ventosa,ABÑ-044,70.60,71
+1480,accesorios baño,Toallero de pie de tres barras,ABÑ-045,65.80,65
+1481,accesorios baño,Escobilla de váter con soporte de cerámica,ABÑ-046,68.90,70
+1482,accesorios baño,Portacepillos de dientes con vaso,ABÑ-047,71.20,73
+1483,accesorios baño,Perchero de puerta para toallas y batas,ABÑ-048,66.70,66
+1484,accesorios baño,Estantería de baño de acero inoxidable,ABÑ-049,72.30,74
+1485,accesorios baño,Jabonera de madera de bambú,ABÑ-050,69.40,70
+1486,accesorios cocina,Set de cuchillos de acero inoxidable,ACKN-001,53.40,45
+1487,accesorios cocina,Batidora de mano potente,ACKN-002,49.80,36
+1488,accesorios cocina,Bandeja de horno antiadherente,ACKN-003,48.65,33
+1489,accesorios cocina,Escurridor de platos plegable,ACKN-004,54.30,40
+1490,accesorios cocina,Molinillo de café eléctrico,ACKN-005,47.20,29
+1491,accesorios cocina,Juego de utensilios de cocina de silicona,ACKN-006,51.90,28
+1492,accesorios cocina,Tetera de vidrio con infusor,ACKN-007,52.80,31
+1493,accesorios cocina,Bascula digital de cocina,ACKN-008,50.60,30
+1494,accesorios cocina,Tabla de cortar de bambú,ACKN-009,55.40,27
+1495,accesorios cocina,Exprimidor de cítricos manual,ACKN-010,48.90,35
+1496,accesorios cocina,Tapa hermética para sartén,ACKN-011,43.60,16
+1497,accesorios cocina,Cucharón de cocina de nylon,ACKN-012,47.40,20
+1498,accesorios cocina,Tijeras de cocina multifunción,ACKN-013,51.20,24
+1499,accesorios cocina,Molinillo de especias de cerámica,ACKN-014,49.80,22
+1500,accesorios cocina,Termómetro digital para alimentos,ACKN-015,45.30,18
+1501,accesorios cocina,Bandeja para horno de silicona,ACKN-016,48.90,21
+1502,accesorios cocina,Escurridor de cubiertos,ACKN-017,46.10,19
+1503,accesorios cocina,Rallador de queso de acero inoxidable,ACKN-018,50.40,23
+1504,accesorios cocina,Botella de aceite con dosificador,ACKN-019,52.80,27
+1505,accesorios cocina,Abrelatas manual,ACKN-020,44.50,17
+1506,accesorios cocina,Tapa para microondas de silicona,ACKN-021,47.60,14
+1507,accesorios cocina,Set de boles de acero inoxidable,ACKN-022,49.80,16
+1508,accesorios cocina,Balanza de cocina de precisión,ACKN-023,51.70,18
+1509,accesorios cocina,Escurridor de ensalada plegable,ACKN-024,48.90,15
+1510,accesorios cocina,Tijeras de cocina de acero inoxidable,ACKN-025,50.20,17
+1511,accesorios cocina,Dispensador de bolsas de plástico,ACKN-026,52.40,19
+1512,accesorios cocina,Cucharas medidoras de plástico,ACKN-027,46.80,13
+1513,accesorios cocina,Afilador de cuchillos manual,ACKN-028,53.10,21
+1514,accesorios cocina,Cortador de verduras en espiral,ACKN-029,55.20,23
+1515,accesorios cocina,Pincel de silicona para repostería,ACKN-030,49.60,20
+1516,accesorios cocina,Set de moldes para hornear,ACKN-031,51.90,22
+1517,accesorios cocina,Exprimidor de limones manual,ACKN-032,53.10,24
+1518,accesorios cocina,Termómetro para horno,ACKN-033,52.40,23
+1519,accesorios cocina,Colador de acero inoxidable,ACKN-034,49.80,21
+1520,accesorios cocina,Tapa para sartén de vidrio,ACKN-035,50.60,20
+1521,accesorios cocina,Juego de embudos de plástico,ACKN-036,48.30,18
+1522,accesorios cocina,Afilador de cuchillos eléctrico,ACKN-037,54.20,26
+1523,accesorios cocina,Tijeras de cocina profesionales,ACKN-038,55.60,28
+1524,accesorios cocina,Set de espátulas de silicona,ACKN-039,53.80,27
+1525,accesorios cocina,Báscula de cocina electrónica,ACKN-040,47.50,19
+1526,accesorios cocina,Cuchillo de chef profesional,ACKN-041,55.20,28
+1527,accesorios cocina,Tabla de cortar de cristal templado,ACKN-042,57.80,31
+1528,accesorios cocina,Termómetro para carne,ACKN-043,58.90,33
+1529,accesorios cocina,Escurridor de verduras plegable,ACKN-044,54.50,30
+1530,accesorios cocina,Colador de malla fina,ACKN-045,56.70,32
+1531,accesorios cocina,Set de embudos de acero inoxidable,ACKN-046,52.90,27
+1532,accesorios cocina,Afilador de cuchillos de diamante,ACKN-047,59.60,35
+1533,accesorios cocina,Tostadora de pan con ranuras anchas,ACKN-048,60.90,37
+1534,accesorios cocina,Molinillo de café eléctrico con ajuste de molienda,ACKN-049,58.40,34
+1535,accesorios cocina,Tapa para sartén de aluminio fundido,ACKN-050,53.70,29
+1536,accesorios dormitorio,Perchas de terciopelo,ADRM-001,43.80,25
+1537,accesorios dormitorio,Organizador de zapatos colgante,ADRM-002,45.60,27
+1538,accesorios dormitorio,Espejo de pie con joyero,ADRM-003,42.90,23
+1539,accesorios dormitorio,Funda nórdica de microfibra,ADRM-004,47.20,30
+1540,accesorios dormitorio,Lámpara de mesita de noche,ADRM-005,49.60,32
+1541,accesorios dormitorio,Set de percheros de pared,ADRM-006,44.80,26
+1542,accesorios dormitorio,Cesto organizador de ropa,ADRM-007,46.40,28
+1543,accesorios dormitorio,Espejo de aumento con luz,ADRM-008,41.90,21
+1544,accesorios dormitorio,Cojines decorativos,ADRM-009,48.30,31
+1545,accesorios dormitorio,Reloj despertador digital,ADRM-010,50.20,33
+1546,accesorios dormitorio,Perchas de madera,ADRM-011,39.70,30
+1547,accesorios dormitorio,Organizador de joyas con espejo,ADRM-012,41.80,32
+1548,accesorios dormitorio,Almohada de viaje inflable,ADRM-013,38.50,28
+1549,accesorios dormitorio,Funda de almohada de seda,ADRM-014,43.20,34
+1550,accesorios dormitorio,Lámpara de lectura ajustable,ADRM-015,45.60,36
+1551,accesorios dormitorio,Caja organizadora de zapatos,ADRM-016,40.90,31
+1552,accesorios dormitorio,Reloj despertador analógico,ADRM-017,42.30,33
+1553,accesorios dormitorio,Baúl de almacenaje plegable,ADRM-018,37.80,29
+1554,accesorios dormitorio,Espejo de pie con marco de madera,ADRM-019,46.70,38
+1555,accesorios dormitorio,Estuche organizador de maquillaje,ADRM-020,48.80,40
+1556,accesorios dormitorio,Organizador de corbatas y cinturones,ADRM-021,44.50,27
+1557,accesorios dormitorio,Estantería colgante de tela,ADRM-022,46.20,29
+1558,accesorios dormitorio,Espejo de mano con aumento,ADRM-023,43.90,26
+1559,accesorios dormitorio,Cesto organizador de juguetes,ADRM-024,48.70,31
+1560,accesorios dormitorio,Perchas con pinza,ADRM-025,50.30,33
+1561,accesorios dormitorio,Reloj despertador con proyector,ADRM-026,45.60,28
+1562,accesorios dormitorio,Organizador de escritorio de madera,ADRM-027,47.80,30
+1563,accesorios dormitorio,Cojín lumbar ergonómico,ADRM-028,42.90,25
+1564,accesorios dormitorio,Lámpara de mesa de madera,ADRM-029,49.40,32
+1565,accesorios dormitorio,Perchero de pared con ganchos,ADRM-030,51.20,34
+1566,accesorios dormitorio,Organizador de calcetines y ropa interior,ADRM-031,46.50,30
+1567,accesorios dormitorio,Caja organizadora de libros,ADRM-032,48.20,32
+1568,accesorios dormitorio,Percha para pañuelos,ADRM-033,45.70,29
+1569,accesorios dormitorio,Funda de almohada impermeable,ADRM-034,50.40,34
+1570,accesorios dormitorio,Espejo de pie con luces LED,ADRM-035,52.90,36
+1571,accesorios dormitorio,Reloj despertador de viaje,ADRM-036,47.60,31
+1572,accesorios dormitorio,Cesto de almacenaje de tela,ADRM-037,49.80,33
+1573,accesorios dormitorio,Perchas de terciopelo con pinzas,ADRM-038,44.90,28
+1574,accesorios dormitorio,Lámpara de escritorio flexible,ADRM-039,53.60,37
+1575,accesorios dormitorio,Cojín decorativo de terciopelo,ADRM-040,55.80,39
+1576,accesorios dormitorio,Organizador de cables,ADRM-041,48.60,32
+1577,accesorios dormitorio,Caja organizadora de juguetes,ADRM-042,50.30,34
+1578,accesorios dormitorio,Espejo de mano de aumento con luz,ADRM-043,47.80,31
+1579,accesorios dormitorio,Percha para bufandas,ADRM-044,52.40,36
+1580,accesorios dormitorio,Reloj despertador digital con cargador USB,ADRM-045,54.70,38
+1581,accesorios dormitorio,Organizador de maquillaje de acrílico transparente,ADRM-046,49.60,33
+1582,accesorios dormitorio,Estuche organizador de joyas,ADRM-047,51.90,35
+1583,accesorios dormitorio,Bandeja para el desayuno con patas plegables,ADRM-048,46.70,30
+1584,accesorios dormitorio,Lámpara de mesa con puerto USB,ADRM-049,55.80,40
+1585,accesorios dormitorio,Perchero de pared con estante,ADRM-050,57.90,42
+1586,colchones,Colchón individual,CLCH-001,57.80,21
+1587,colchones,Colchón matrimonial,CLCH-002,59.60,23
+1588,colchones,Topper de espuma viscoelástica,CLCH-003,56.90,20
+1589,colchones,Almohada ergonómica,CLCH-004,54.50,18
+1590,colchones,Protector de colchón impermeable,CLCH-005,61.20,25
+1591,colchones,Almohada cervical,CLCH-006,55.20,16
+1592,colchones,Colchón inflable de camping,CLCH-007,53.80,15
+1593,colchones,Base para colchón,CLCH-008,58.40,17
+1594,colchones,Funda protectora para colchón,CLCH-009,56.90,18
+1595,colchones,Cubrecolchón de lana,CLCH-010,62.10,20
+1596,colchones,Colchón ortopédico de muelles,CLCH-011,61.20,19
+1597,colchones,Almohada de plumas,CLCH-012,59.40,17
+1598,colchones,Sabana bajera ajustable,CLCH-013,64.20,21
+1599,colchones,Funda de almohada de algodón,CLCH-014,62.70,20
+1600,colchones,Topper de látex,CLCH-015,68.40,24
+1601,colchones,Funda de colchón ajustable,CLCH-016,64.90,22
+1602,colchones,Almohada viscoelástica,CLCH-017,62.40,20
+1603,colchones,Cubrecolchón de poliéster,CLCH-018,67.30,24
+1604,colchones,Sabana encimera de algodón,CLCH-019,66.20,23
+1605,colchones,Topper de plumas,CLCH-020,72.10,28
+1606,muebles baño,Lavabo con mueble,MBAÑ-001,137.80,169
+1607,muebles baño,Estante para baño,MBAÑ-002,126.95,158
+1608,muebles baño,Espejo con luz LED,MBAÑ-003,134.50,176
+1609,muebles baño,Armario alto de baño,MBAÑ-004,142.30,163
+1610,muebles baño,Toallero de pie,MBAÑ-005,125.75,152
+1611,muebles baño,Silla para ducha,MBAÑ-006,138.60,155
+1612,muebles baño,Juego de accesorios de baño,MBAÑ-007,129.25,141
+1613,muebles baño,Organizador de cosméticos,MBAÑ-008,136.90,170
+1614,muebles baño,Percha adhesiva,MBAÑ-009,132.80,146
+1615,muebles baño,Alfombra antideslizante,MBAÑ-010,141.20,162
+1616,muebles cocina,Mesa de cocina extensible,MKCN-001,143.90,168
+1617,muebles cocina,Sillas de cocina modernas,MKCN-002,137.20,160
+1618,muebles cocina,Armario esquinero,MKCN-003,129.65,153
+1619,muebles cocina,Taburetes altos de bar,MKCN-004,151.40,177
+1620,muebles cocina,Carrito de cocina con ruedas,MKCN-005,119.60,140
+1621,muebles cocina,Estantería para especias,MKCN-006,128.30,159
+1622,muebles cocina,Mueble bajo para almacenaje,MKCN-007,137.45,172
+1623,muebles cocina,Cubertero de bambú,MKCN-008,133.60,147
+1624,muebles cocina,Cortinas para ventana,MKCN-009,136.20,164
+1625,muebles cocina,Banco esquinero con almacenaje,MKCN-010,142.75,175
+1626,muebles dormitorio,Cama doble con cabecero tapizado,MDRM-001,134.75,153
+1627,muebles dormitorio,Armario empotrado,MDRM-002,123.20,141
+1628,muebles dormitorio,Comoda de madera,MDRM-003,121.45,157
+1629,muebles dormitorio,Escritorio con cajones,MDRM-004,127.36,162
+1630,muebles dormitorio,Colchón ortopédico,MDRM-005,119.80,148
+1631,muebles dormitorio,Mesita de noche vintage,MDRM-006,112.70,130
+1632,muebles dormitorio,Silla acolchada,MDRM-007,137.60,146
+1633,muebles dormitorio,Perchero de pie,MDRM-008,131.25,155
+1634,muebles dormitorio,Espejo de cuerpo entero,MDRM-009,139.20,138
+1635,muebles dormitorio,Canapé abatible,MDRM-010,124.45,152
+1636,muebles salon,Sofá moderno,MSLN-001,156.78,175
+1637,muebles salon,Mesa de centro elegante,MSLN-002,125.60,142
+1638,muebles salon,Estantería de madera,MSLN-003,108.36,139
+1639,muebles salon,Lámpara de pie minimalista,MSLN-004,127.40,156
+1640,muebles salon,Set de sofás de cuero,MSLN-005,142.80,163
+1641,muebles salon,Mueble de TV con cajones,MSLN-006,114.95,148
+1642,muebles salon,Sillón reclinable,MSLN-007,137.22,170
+1643,muebles salon,Mesa de comedor extensible,MSLN-008,148.20,159
+1644,muebles salon,Vitrina de cristal,MSLN-009,129.50,147
+1645,muebles salon,Espejo decorativo,MSLN-010,133.90,168
+1646,repuestos,Aspas para ventilador,RPST-001,33.60,20
+1647,repuestos,Filtro de aire acondicionado,RPST-002,34.80,22
+1648,repuestos,Lámpara para proyector,RPST-003,31.90,18
+1649,repuestos,Batería para taladro,RPST-004,36.50,24
+1650,repuestos,Correa para lavadora,RPST-005,32.40,19
+1651,repuestos,Mando a distancia universal,RPST-006,35.20,21
+1652,repuestos,Boquilla para aspiradora,RPST-007,30.80,17
+1653,repuestos,Bombilla LED,RPST-008,37.10,25
+1654,repuestos,Funda para sofá,RPST-009,38.60,26
+1655,repuestos,Pistón hidráulico,RPST-010,39.90,27
+1656,repuestos,Filtro de agua para nevera,RPST-011,31.60,16
+1657,repuestos,Cuchillas de afeitar,RPST-012,34.70,19
+1658,repuestos,Bomba de agua para lavavajillas,RPST-013,30.90,15
+1659,repuestos,Interruptor de luz,RPST-014,36.40,18
+1660,repuestos,Panel solar para lámpara de jardín,RPST-015,33.80,17
+1661,repuestos,Tubo de escape para aspiradora,RPST-016,35.90,20
+1662,repuestos,Correa de transmisión para secadora,RPST-017,32.70,16
+1663,repuestos,Botón de encendido para lavadora,RPST-018,38.20,19
+1664,repuestos,Tornillos de repuesto,RPST-019,40.50,22
+1665,repuestos,Funda para plancha,RPST-020,39.70,21
+1666,repuestos,Correa para ventilador de techo,RPST-021,33.40,14
+1667,repuestos,Batería para reloj de pared,RPST-022,36.20,17
+1668,repuestos,Resistencia para calentador de agua,RPST-023,31.80,13
+1669,repuestos,Fusible para horno eléctrico,RPST-024,35.60,16
+1670,repuestos,Piezas de repuesto para grifo,RPST-025,32.90,15
+1671,repuestos,Bolsa para aspiradora,RPST-026,34.70,18
+1672,repuestos,Interruptor para lavavajillas,RPST-027,30.50,12
+1673,repuestos,Tubo de desagüe para lavadora,RPST-028,37.80,19
+1674,repuestos,Mando a distancia para televisión,RPST-029,39.40,21
+1675,repuestos,Panel de control para nevera,RPST-030,38.20,20
+1676,repuestos,Filtro de agua para grifo,RPST-031,32.80,14
+1677,repuestos,Bombilla para proyector,RPST-032,35.60,17
+1678,repuestos,Correa para secadora,RPST-033,31.40,13
+1679,repuestos,Pieza de repuesto para aspiradora,RPST-034,34.20,16
+1680,repuestos,Interruptor para lavadora,RPST-035,32.60,15
+1681,repuestos,Bolsa para aspiradora de papel,RPST-036,35.10,18
+1682,repuestos,Tubo de desagüe para lavavajillas,RPST-037,30.90,12
+1683,repuestos,Tapa para placa de cocina,RPST-038,37.20,19
+1684,repuestos,Cable de alimentación para televisión,RPST-039,38.40,21
+1685,repuestos,Filtro de carbón para campana extractora,RPST-040,39.70,22

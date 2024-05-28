@@ -3,3 +3,8 @@ pandas
 streamlit
 openai
 scikit_learn
+
+torch
+torchvision
+Pillow
+requests
