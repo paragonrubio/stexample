@@ -1,43 +1,83 @@
 import streamlit as st
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# Cargar el dataset Iris
-iris = load_iris()
-X = pd.DataFrame(iris.data, columns=iris.feature_names)
-y = pd.Series(iris.target, name='target')
+# Cargar el dataset
+@st.cache
+def load_data(file_path):
+    return pd.read_csv(file_path)
 
-# Dividir el dataset en entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-# Entrenar un modelo de Random Forest
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
+file_path = 'imdb2.csv'
+imdb_data = load_data(file_path)
 
 # Configurar los sliders para los filtros
-st.sidebar.header('Parámetros para la Predicción')
+st.sidebar.header('Filtros')
 
-sepal_length = st.sidebar.slider('Longitud del Sépalo (cm)', float(X['sepal length (cm)'].min()), float(X['sepal length (cm)'].max()), float(X['sepal length (cm)'].mean()))
-sepal_width = st.sidebar.slider('Ancho del Sépalo (cm)', float(X['sepal width (cm)'].min()), float(X['sepal width (cm)'].max()), float(X['sepal width (cm)'].mean()))
-petal_length = st.sidebar.slider('Longitud del Pétalo (cm)', float(X['petal length (cm)'].min()), float(X['petal length (cm)'].max()), float(X['petal length (cm)'].mean()))
-petal_width = st.sidebar.slider('Ancho del Pétalo (cm)', float(X['petal width (cm)'].min()), float(X['petal width (cm)'].max()), float(X['petal width (cm)'].mean()))
+year_range = st.sidebar.slider('Año de lanzamiento', 
+                               int(imdb_data['Year'].min()), 
+                               int(imdb_data['Year'].max()), 
+                               (2000, 2020))
 
-# Crear un dataframe con los valores seleccionados
-input_data = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]], 
-                          columns=['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)'])
+rating_range = st.sidebar.slider('Rating', 
+                                 float(imdb_data['Rating'].min()), 
+                                 float(imdb_data['Rating'].max()), 
+                                 (imdb_data['Rating'].min(), imdb_data['Rating'].max()))
 
-# Realizar la predicción
-prediction = model.predict(input_data)
-prediction_proba = model.predict_proba(input_data)
+revenue_range = st.sidebar.slider('Revenue (Millions)', 
+                                  float(imdb_data['Revenue (Millions)'].min()), 
+                                  float(imdb_data['Revenue (Millions)'].max()), 
+                                  (imdb_data['Revenue (Millions)'].min(), imdb_data['Revenue (Millions)'].max()))
 
-# Mostrar los resultados de la predicción
-st.title('Predicción del Iris')
-st.write(f"Clase Predicha: {iris.target_names[prediction][0]}")
-st.write(f"Probabilidad de la Predicción: {prediction_proba[0][prediction][0]:.2f}")
+runtime_range = st.sidebar.slider('Duración (Minutos)', 
+                                  int(imdb_data['Runtime (Minutes)'].min()), 
+                                  int(imdb_data['Runtime (Minutes)'].max()), 
+                                  (imdb_data['Runtime (Minutes)'].min(), imdb_data['Runtime (Minutes)'].max()))
 
-# Mostrar la tabla de probabilidades
-st.subheader('Probabilidades de todas las Clases')
-prob_df = pd.DataFrame(prediction_proba, columns=iris.target_names)
-st.table(prob_df)
+votes_range = st.sidebar.slider('Número de votos', 
+                                int(imdb_data['Votes'].min()), 
+                                int(imdb_data['Votes'].max()), 
+                                (imdb_data['Votes'].min(), imdb_data['Votes'].max()))
+
+# Filtrar el dataframe según los valores seleccionados en los sliders
+filtered_data = imdb_data[(imdb_data['Year'] >= year_range[0]) & (imdb_data['Year'] <= year_range[1]) &
+                          (imdb_data['Rating'] >= rating_range[0]) & (imdb_data['Rating'] <= rating_range[1]) &
+                          (imdb_data['Revenue (Millions)'] >= revenue_range[0]) & (imdb_data['Revenue (Millions)'] <= revenue_range[1]) &
+                          (imdb_data['Runtime (Minutes)'] >= runtime_range[0]) & (imdb_data['Runtime (Minutes)'] <= runtime_range[1]) &
+                          (imdb_data['Votes'] >= votes_range[0]) & (imdb_data['Votes'] <= votes_range[1])]
+
+
+st.title('Dashboard de Películas')
+
+# Visualización de facturación por año
+st.subheader('Facturación por Año')
+revenue_per_year = filtered_data.groupby('Year')['Revenue (Millions)'].sum()
+fig, ax = plt.subplots()
+revenue_per_year.plot(kind='bar', ax=ax)
+ax.set_xlabel('Año')
+ax.set_ylabel('Revenue (Millions)')
+ax.set_title('Revenue por Año')
+st.pyplot(fig)
+
+# Mostrar las métricas
+st.title('Dashboard de Películas')
+
+# Top 20 películas con mayor rating
+st.subheader('Top 20 Películas con Mayor Rating')
+top_20_rating = filtered_data.nlargest(20, 'Rating')[['Title', 'Rating']]
+st.table(top_20_rating)
+
+# Top 20 películas con mayor revenue
+st.subheader('Top 20 Películas con Mayor Revenue')
+top_20_revenue = filtered_data.nlargest(20, 'Revenue (Millions)')[['Title', 'Revenue (Millions)']]
+st.table(top_20_revenue)
+
+# Top 20 películas con mayores votos
+st.subheader('Top 20 Películas con Mayores Votos')
+top_20_votes = filtered_data.nlargest(20, 'Votes')[['Title', 'Votes']]
+st.table(top_20_votes)
+
+# Recuento de actores más repetidos
+st.subheader('Actores Más Repetidos')
+actors_series = filtered_data['Actors'].str.split(', ').explode().value_counts()
+top_actors = actors_series.head(20)
+st.table(top_actors)
